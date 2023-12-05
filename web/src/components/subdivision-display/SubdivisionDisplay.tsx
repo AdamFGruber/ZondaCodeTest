@@ -30,8 +30,6 @@ export const SubdivisionDisplay = () => {
         let rows = undefined;
 
         let filterParam = getFilterParam();
-        console.log(filterParam);
-        console.log("sortBy: " + sortBy);
 
         if(filterParam.length > 0 || sortBy != ""){
             axios.post(url, {
@@ -39,7 +37,6 @@ export const SubdivisionDisplay = () => {
                 sortBy: sortBy
             })
             .then(function (response) {
-                console.log(response.data.subdivisions);
                 setData(response.data.subdivisions);
             })
             .catch(function (error) {
@@ -54,7 +51,6 @@ export const SubdivisionDisplay = () => {
                 }
             })
             .then(function (response) {
-                console.log(response.data.subdivisions);
                 setData(response.data.subdivisions);
             })
             .catch(function (error) {
