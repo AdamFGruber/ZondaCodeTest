@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "rest api for the zonda code test project",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamFGruber/ZondaCodeTest.git"
+  },
+  "author": "Adam Gruber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamFGruber/ZondaCodeTest/issues"
+  },
+  "homepage": "https://github.com/AdamFGruber/ZondaCodeTest#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
